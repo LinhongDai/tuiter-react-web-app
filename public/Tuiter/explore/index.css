@@ -1,0 +1,257 @@
+.wd-page-color {
+  background-color: black
+}
+
+.wd-content-color {
+  color: white
+}
+
+.wd-border-color {
+  border-color: rgb(47, 51, 54)
+}
+
+.wd-border-size {
+  border-width: 1px
+}
+
+.wd-border-style {
+  border-style: solid
+}
+
+.wd-page-dimension {
+  position: absolute;
+  width: 700px;
+  height: 1000px;
+  left: 50px;
+  right: 10px;
+  /*top: 3px*/
+}
+
+.wd-page-margin {
+  margin-left: 50px;
+  margin-right: 10px;
+  margin-top: 3px;
+}
+
+/*A area*/
+
+.wd-A-dimension {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+}
+
+.wd-search-position {
+  position: absolute;
+  left: 16px;
+  top: 10px
+}
+
+.wd-search-box-color {
+  background-color: darkgray;
+}
+
+.wd-rounded-corners-all-around {
+  border-radius: 50px;
+}
+
+.wd-search-box-size {
+  width: 80%;
+  height: 30px
+}
+
+.wd-gear-position {
+  position: absolute;
+  right: 12px;
+  top: 20px
+}
+
+/*B area*/
+.wd-B-dimension {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  top: 40px
+}
+
+.wd-highlighted-color {
+  color: rgb(29, 161, 242)
+}
+
+.wd-normal-color {
+  color: rgb(110, 118, 125)
+}
+
+.wd-links-font {
+  font-size: 15px
+}
+
+.wd-hyper-border-size {
+  border-bottom: 2px;
+}
+
+.wd-hyper-border-color {
+  color: rgb(29, 161, 242)
+}
+
+.wd-hyper-border-style {
+  border-bottom-style: solid;
+}
+
+.wd-hyper-padding {
+  padding: 16px
+}
+
+.wd-for-you-dimension {
+  position: absolute;
+  width: 50px;
+  bottom: 0px
+}
+
+.wd-Trending-dimension {
+  position: absolute;
+  width: 50px;
+  bottom: 0px;
+  left: 100px;
+}
+
+.wd-Covid-19-dimension {
+  position: absolute;
+  width:100px;
+  bottom: 0px;
+  left: 205px
+}
+
+.wd-News-dimension {
+  position: absolute;
+  width:50px;
+  bottom: 0px;
+  left: 320px
+}
+
+.wd-Sports-dimension {
+  position: absolute;
+  width: 50px;
+  bottom: 0px;
+  left: 400px
+}
+
+.wd-Entertainment-dimension {
+  position: absolute;
+  width: 50px;
+  bottom: 0px;
+  left: 490px
+}
+
+.wd-BC-partition {
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  top: 100px;
+  background-color: darkgray;
+}
+
+/*C Area*/
+.wd-C-dimension {
+  position: absolute;
+  width: 100%;
+  height: 160px;
+  top: 110px
+}
+
+.wd-area-border-color {
+  border-bottom-color: rgb(47, 51, 54);
+}
+
+.wd-topic-style {
+  font-size: 13px;
+  color: rgb(110, 118, 125)
+}
+
+.wd-content-position {
+  position: relative;
+  top: 16px;
+  left: 16px
+}
+
+.wd-sports-position {
+  position: relative;
+  top: 40px;
+  left: 16px
+}
+
+/*D area*/
+.wd-D-dimension {
+  position: absolute;
+  width: 100%;
+  height: 120px;
+  top: 270px
+}
+
+.wd-image-float {
+  float: right;
+}
+
+.wd-D-content-dimension {
+  position: relative;
+  width: 668px;
+  left: 16px;
+  right: 16px;
+  top: -10px
+}
+
+.wd-image-size {
+  width: 100px;
+  height: 100px;
+}
+
+.wd-image-rounded-corner {
+  border-radius: 10px;
+}
+
+/*E Area*/
+.wd-E-dimension {
+  position: absolute;
+  width: 100%;
+  height: 120px;
+  top: 390px
+}
+
+.wd-E-content-dimension {
+  position: relative;
+  width: 668px;
+  left: 16px;
+  right: 16px;
+  top: -7px
+}
+
+/*D1 Area*/
+.wd-D1-dimension {
+  position: absolute;
+  width: 100%;
+  height: 120px;
+  top: 510px
+}
+.wd-D1-content-dimension {
+  position: relative;
+  width: 668px;
+  left: 16px;
+  right: 16px;
+  top: -10px
+}
+
+/*E1 Area*/
+.wd-E1-dimension {
+  position: absolute;
+  width: 100%;
+  height: 120px;
+  top: 630px
+}
+
+.wd-E1-content-dimension {
+  position: relative;
+  width: 668px;
+  left: 16px;
+  right: 16px;
+  top: -7px
+}
