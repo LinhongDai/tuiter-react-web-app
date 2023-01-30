@@ -1,0 +1,19 @@
+.wd-page-color {
+  background-color: black
+}
+
+.wd-content-color {
+  color: white
+}
+
+.wd-border-color {
+  border-color: rgb(47, 51, 54)
+}
+
+.wd-border-size {
+  border-width: 1px
+}
+
+.wd-border-style {
+  border-style: solid
+}
