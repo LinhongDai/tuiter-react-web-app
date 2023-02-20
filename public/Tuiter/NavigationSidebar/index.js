@@ -2,7 +2,7 @@ const NavigationSidebar = (active = 'Home') => {
   const sections = [
     {label: '', href: '/', icon: 'fab fa-twitter'},
     {label: 'Home', href: '../HomeScreen/index.html', icon: 'fa fa-home'},
-    {label: 'Explore', href: '../explore/index3.html', icon: 'fa fa-hashtag'},
+    {label: 'Explore', href: '../explore/index1.html', icon: 'fa fa-hashtag'},
     {label: 'Notifications', href: '#', icon: 'fa fa-bell'},
     {label: 'Messages', href: '#', icon: 'fa fa-envelope'},
     {label: 'Bookmarks', href: '#', icon: 'fa fa-bookmark'},
