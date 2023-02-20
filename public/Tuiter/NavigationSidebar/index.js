@@ -1,34 +1,32 @@
-const NavigationSidebar = () => {
+const NavigationSidebar = (active = 'Home') => {
+  const sections = [
+    {label: '', href: '/', icon: 'fab fa-twitter'},
+    {label: 'Home', href: '../HomeScreen/index.html', icon: 'fa fa-home'},
+    {label: 'Explore', href: '../explore/index3.html', icon: 'fa fa-hashtag'},
+    {label: 'Notifications', href: '#', icon: 'fa fa-bell'},
+    {label: 'Messages', href: '#', icon: 'fa fa-envelope'},
+    {label: 'Bookmarks', href: '#', icon: 'fa fa-bookmark'},
+    {label: 'Lists', href: '.#', icon: 'fa fa-list'},
+    {label: 'Profile', href: '#', icon: 'fa fa-user'},
+    {label: 'More', href: '#', icon: 'fa fa-bars'},
+
+  ]
   return(`
    <div class="list-group">
-     <a class="list-group-item" href="/">
-       <i class="fab fa-twitter"></i></a>
        <!-- continue rest of list, e.g.,
             Home, Explore, Notifications,  Messages, etc. -->
-      <div class="list-group-item list-group-item-action" style="display: flex; align-items: center; justify-items: center; border: none">
-        <i class="fa fa-home"></i><span class="d-none d-xl-block ms-1">Home</span>
-      </div>
-      <div class="list-group-item list-group-item-action active" style="display: flex; align-items: center; justify-items: center; border: none; font-weight: bold">
-        <i class="fa fa-hashtag"></i><span class="d-none d-xl-block ms-1">Explore</span>
-      </div>
-      <div class="list-group-item list-group-item-action" style="display: flex; align-items: center; justify-items: center; border: none">
-        <i class="fa fa-bell"></i><span class="d-none d-xl-block ms-1">Notifications</span>
-      </div>
-      <div class="list-group-item list-group-item-action" style="display: flex; align-items: center; justify-items: center; border: none">
-        <i class="fa fa-envelope"></i><span class="d-none d-xl-block ms-1">Messages</span>
-      </div>
-      <div class="list-group-item list-group-item-action" style="display: flex; align-items: center; justify-items: center; border: none">
-        <i class="fa fa-bookmark"></i><span class="d-none d-xl-block ms-1">Bookmarks</span>
-      </div>
-      <div class="list-group-item list-group-item-action" style="display: flex; align-items: center; justify-items: center; border: none">
-        <i class="fa fa-list"></i><span class="d-none d-xl-block ms-1">Lists</span>
-      </div>
-      <div class="list-group-item list-group-item-action" style="display: flex; align-items: center; justify-items: center; border: none">
-        <i class="fa fa-user"></i><span class="d-none d-xl-block ms-1">Profile</span>
-      </div>
-      <div class="list-group-item list-group-item-action" style="display: flex; align-items: center; justify-items: center; border: none">
-        <i class="fa fa-bars"></i><span class="d-none d-xl-block ms-1">More</span>
-      </div>
+     ${
+        sections.map(section => 
+          `<div class="list-group-item list-group-item-action row ${section.label === active ? 'active' : ''}" style="display: flex; align-items: center; justify-items: center; border: none;">
+             <div class="col-2">
+              <i class='${section.icon}'></i>
+             </div>
+             <div class="col-8">
+              <a class="d-none d-xl-block ms-1" href=${section.href} style="text-decoration: none; color: white">${section.label}</a>
+             </div>
+          </div>`).join('')
+      }
+<!--      </div>-->
     </div>
    <div class="d-grid mt-2">
      <a href="tweet.html"

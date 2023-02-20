@@ -34,7 +34,7 @@ const ExploreComponent = () => {
      <!-- image with overlaid text -->
      <img width="100%" height="350" src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg">
 <!--     <p class="position-relative wd-content-color" style="bottom: 60px; left: 5px">Tennis Tournament . LIVE</p>-->
-      <h4 class="position-relative" style="bottom: 40px; left: 5px; color: black">SpaceX's Starship</h4>
+      <h4 class="position-relative" style="bottom: 40px; left: 5px; color: rgb(110, 118, 125)">SpaceX's Starship</h4>
       <div class="position-relative" style="bottom: 40px;">
         ${PostSummaryList()}
       </div>
