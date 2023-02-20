@@ -1,5 +1,5 @@
 import NavigationSidebar from "../NavigationSidebar/index.js";
-import WhoToFollowList from "../WhoToFollowList";
+import WhoToFollowList from "../WhoToFollowList/index.js";
 import ExploreComponent from "./ExploreComponents.js";
 // init jquery function
 function exploreComponent() {
