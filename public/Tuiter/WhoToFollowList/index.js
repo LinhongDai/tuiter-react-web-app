@@ -1,4 +1,4 @@
-import whoToFollowListItem from "./WhoToFollowListItem.js";
+import WhoToFollowListItem from "./WhoToFollowListItem.js";
 import whos from "./whos.js"
 
 const WhoToFollowList = () => {
@@ -8,7 +8,7 @@ const WhoToFollowList = () => {
     <!-- continue here -->
       ${
           whos.map(who => {
-            return(whoToFollowListItem(who));
+            return(WhoToFollowListItem(who));
           }).join('')
         }
     </ul>
