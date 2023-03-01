@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <a href = "Navigation.html">Back</a>
+  <h1>Tuiter</h1>
+  <h2>Tuit</h2>
+
+  <img src = "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-13800-20131213-bey-x1800-1386973114.jpg"
+       width = "48px"
+       height = "48px"/><br/>
+  <form id="user_input">
+    <textarea cols="20" rows="4" placeholder="What's happening?"></textarea><br/>
+
+    <select id="selectStatus">
+      <option selected value="EVERYONE">Everyone can reply</option>
+      <option value="FOLLOWING">People you follow</option>
+      <option value="MENTIONED">Only people you mention</option>
+    </select>
+
+    <hr>
+
+    <!-- image upload -->
+    <input type="file" id="img" accept="image/*"/>
+    <button>
+        Tuit
+    </button>
+
+    <hr>
+  </form>
+</body>
+</html>
