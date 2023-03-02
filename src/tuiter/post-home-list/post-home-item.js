@@ -34,7 +34,7 @@ const postItem = (
 
 
         <p className={"ps-2"}>{post.title}</p>
-        <img alt="post image" style={{width: '100%', height: '350px', borderTopLeftRadius: '10px', borderTopRightRadius: '10px', borderColor: 'rgb(110, 118, 125)'}} src={post.image}/>
+        <img alt={post.image} style={{width: '100%', height: '350px', borderTopLeftRadius: '10px', borderTopRightRadius: '10px', borderColor: 'rgb(110, 118, 125)'}} src={post.image}/>
 
         {post.userName === 'Elon Musk' &&
       <div className="pb-2 ps-2 pe-2 pt-2" style={{borderBottomLeftRadius: '10px', borderBottomRightRadius: '10px', borderStyle:'solid', borderColor: 'lightgray'}}>
