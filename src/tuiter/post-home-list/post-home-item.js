@@ -20,7 +20,7 @@ const postItem = (
     <li className="pt-3 ps-2 pe-2 pb-2 list-group-item list-group-item-action">
     <div className="row">
       <div className="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-1 col-xxl-1">
-        <img src={post.avatarIcon} width={50} height={50} className="rounded-circle"/>
+        <img src={post.avatarIcon} alt="avatar icon" width={50} height={50} className="rounded-circle"/>
       </div>
       <div className="col-10 col-sm-10 col-md-10 col-lg-11 col-xl-11 col-xxl-11">
         <div className={"ps-2"}>
@@ -34,7 +34,7 @@ const postItem = (
 
 
         <p className={"ps-2"}>{post.title}</p>
-        <img style={{width: '100%', height: '350px', borderTopLeftRadius: '10px', borderTopRightRadius: '10px', borderColor: 'rgb(110, 118, 125)'}} src={post.image}/>
+        <img alt="post image" style={{width: '100%', height: '350px', borderTopLeftRadius: '10px', borderTopRightRadius: '10px', borderColor: 'rgb(110, 118, 125)'}} src={post.image}/>
 
         {post.userName === 'Elon Musk' &&
       <div className="pb-2 ps-2 pe-2 pt-2" style={{borderBottomLeftRadius: '10px', borderBottomRightRadius: '10px', borderStyle:'solid', borderColor: 'lightgray'}}>
@@ -47,13 +47,13 @@ const postItem = (
         <div className="row">
         <div className="col-3" style={{textDecoration: 'none'}}>
           <Link to="#" style={{textDecoration: 'none'}}>
-            <i className="fa fa-comment"></i>
+            <i className="bi bi-chat"></i>
             <span style={{color: 'rgb(110, 118, 125)'}}>{post.comment}</span>
           </Link>
         </div>
         <div className="col-3" style={{textDecoration: 'none'}}>
           <Link to="#" style={{textDecoration: 'none'}}>
-            <i className="bi bi-retweet"></i>
+            <i className="bi bi-arrow-repeat"></i>
             <span style={{color: 'rgb(110, 118, 125)'}}>{post.retweet}</span>
           </Link>
         </div>
