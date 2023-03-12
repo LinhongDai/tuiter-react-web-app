@@ -1,10 +1,14 @@
 import React from "react";
-import PostList from "../post-home-list";
+import TuitsList from "../tuits/tuitsList";
+import WhatsHappening from "./whats-happening";
 
 const HomeComponent = () => {
-  return (
-        <PostList/>
+  return(
+      <>
+        <h4>Home</h4>
+        <WhatsHappening/>
+        <TuitsList/>
+      </>
   );
-}
-
+};
 export default HomeComponent;
