@@ -21,17 +21,17 @@ const ProfileItem = (
     }
 ) => {
   const profileObject = useSelector(state => state.profile)
-  console.log(profileObject)
   return (
       <div className="border">
-        <img src={profileObject.bannerPicture} alt="banner picture" style={{width: '100%', height: '200px'}}/>
+        <img src={profileObject.bannerPicture} alt="banner" style={{width: '100%', height: '200px'}}/>
         <div className="mt-3 ps-3 pe-4">
           <button  className="btn rounded-pill border float-end">
             <Link to="/tuiter/edit-profile" style={{textDecoration : "none", color: 'rgb(110, 118, 125)'}}>
               Edit profile
             </Link>
           </button>
-          <img src={profileObject.profilePicture} alt="profile picture"
+
+          <img src={profileObject.profilePicture} alt="profile"
                className="position-relative rounded-circle"
                style={{height: '150px', width: '150px', top: '-95px', left: '-10px'}}/>
         </div>
