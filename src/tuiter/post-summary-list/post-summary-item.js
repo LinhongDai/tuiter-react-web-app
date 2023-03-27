@@ -1,7 +1,7 @@
 import React from "react";
-const PostSummaryItem = (
+const tuitSummaryItem = (
     {
-      post = {
+      tuit = {
         "topic": "Space",
         "userName": "SpaceX",
         "time": "2h",
@@ -14,15 +14,15 @@ const PostSummaryItem = (
       <li className="list-group-item">
         <div className="row">
           <div className="col-10">
-            <div>{post.userName} . {post.time}</div>
-            <div className="fw-bolder">{post.topic}</div>
-            <div>{post.tuit}</div>
+            <div>{tuit.username} . {tuit.time}</div>
+            <div className="fw-bolder">{tuit.topic}</div>
+            <div>{tuit.tuit}</div>
           </div>
           <div className="col-2">
-            <img width={70} className="float-end rounded-3" src={post.image} alt={post.image}/>
+            <img width={70} className="float-end rounded-3" src={tuit.image} alt={tuit.image}/>
           </div>
         </div>
       </li>
   );
 };
-export default PostSummaryItem;
+export default tuitSummaryItem;

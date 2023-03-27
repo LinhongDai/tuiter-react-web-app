@@ -1,13 +1,13 @@
 import React from 'react'
 import {useDispatch} from "react-redux";
-import {deleteTuit} from "./tuits-reducer";
+import {deleteTuitThunk} from "../../services/tuits-thunks";
 
 const TuitItem = (
     {
-      post = {
+      tuit = {
         "_id": 123,
         "topic": "Space",
-        "userName": "SpaceX",
+        "username": "SpaceX",
         "time": "2h",
         "image": "tesla.png",
         "liked": true,
@@ -22,24 +22,24 @@ const TuitItem = (
 ) => {
   const dispatch = useDispatch();
   const deleteTuitHandler = (id) => {
-    dispatch(deleteTuit(id));
+    dispatch(deleteTuitThunk(id));
   }
 
   return (
       <div className="row">
         <div className="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-1 col-xxl-1">
-          <img src={post.image} alt="avatar icon" width={50} height={50}
+          <img src={tuit.image} alt="avatar icon" width={50} height={50}
                className="rounded-circle"/>
         </div>
         <div className="col-10 col-sm-10 col-md-10 col-lg-11 col-xl-11 col-xxl-11">
           <i className="bi bi-x-lg float-end"
-             onClick={() => deleteTuitHandler(post._id)}>
+             onClick={() => deleteTuitHandler(tuit._id)}>
 
           </i>
           <div className={"ps-2"}>
             <span>
               <h6 style={{display: 'inline-block'}}>
-                {post.userName}
+                {tuit.username}
               </h6>
             </span>
             <span className="ms-1" style={{display: 'inline-block'}}>
@@ -50,7 +50,7 @@ const TuitItem = (
               color: 'rgb(110, 118, 125)',
               marginLeft: '4px'
             }}>
-              {post.handle}
+              {tuit.handle}
             </span>
 
 
@@ -58,14 +58,14 @@ const TuitItem = (
               display: 'inline-block',
               color: 'rgb(110, 118, 125)',
               marginLeft: '4px'
-            }}>· {post.time}</span>
+            }}>· {tuit.time}</span>
             {/*<span style={{*/}
             {/*  color: 'rgb(110, 118, 125)',*/}
             {/*  float: 'right'*/}
             {/*}}>...</span>*/}
           </div>
           <p className={"ps-2"}>
-            {post.tuit}
+            {tuit.tuit}
           </p>
         </div>
       </div>
